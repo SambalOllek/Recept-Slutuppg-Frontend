@@ -1,0 +1,46 @@
+html,body {
+    background-color: darkslategrey;
+    overflow: hidden;
+}
+#Hero {
+//    background-image: url("assets/cooking.jpg");
+background-image:url("assets/cooking.jpg");
+background-repeat:no-repeat;
+height:100vh;
+background-size: cover;
+padding: 0 px;
+margin: 0px;
+}
+#Logger {
+background-color: darkslategrey;
+border-style: 10px white;
+width: 50vw;
+height: 25vh;
+opacity: 90%;
+display:inline-block;
+text-align:center;
+margin-left:25vw;
+margin-top:400px;
+
+}
+h1 {
+    color:white;
+    text-align:center;
+}
+#LoginDiv {
+    background-color: black;
+    width: 25%;
+    margin-left: 25%;
+}
+#Login {
+    background-color:darkslategrey;
+    color: white;
+    padding: 10px;
+    border-style:white;
+    margin-top: 70px;
+    width: 150px;
+    //margin-left: 100px;
+    
+
+    
+}

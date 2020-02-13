@@ -6,7 +6,7 @@ export default function FirstPage() {
         <div>
             <div id="Hero">
                 <div id="Logger">
-                    <h1>Welcome!</h1>     
+                    <h1>Add your recipe!</h1>     
                     <button id="Login">Log in here</button>
                 </div>
             </div>

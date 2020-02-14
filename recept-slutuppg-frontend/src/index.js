@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import FirstPage from './FirstPage.js';
 import NewRec from './NewRec.js';
 
-ReactDOM.render(<FirstPage/>, document.getElementById('root'));
+ReactDOM.render(<NewRec/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

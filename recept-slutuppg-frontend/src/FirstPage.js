@@ -10,9 +10,6 @@ export default function FirstPage() {
                     <button id="Login">Log in here</button>
                 </div>
             </div>
-            <body>
-
-            </body>
 
         </div>
 

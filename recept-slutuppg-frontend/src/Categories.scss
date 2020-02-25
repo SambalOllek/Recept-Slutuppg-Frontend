@@ -1,0 +1,44 @@
+.container {
+    grid-template-rows: auto;
+    display:grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-column-gap: 5px;
+}
+
+.item-1 {
+ grid-area: main;
+ justify-self: start;   
+ background-image: url("assets/cold.jpg");
+ grid-column-start: 2;
+ grid-row-start: 1;
+ grid-row-end: 2;
+ grid-column-end: 4;
+}
+
+.item-2 {
+ grid-area: main;   
+ background-image: url("assets/hot.jpg");
+ grid-column-start: 3;
+ grid-row-start: 3;
+ grid-column-end: 4;
+ grid-row-end: 4;
+}
+
+.item-3 {
+ grid-area: main;   
+ background-image: url("assets/dessert.jpg");
+ grid-column-start: 5;
+ grid-row-start: 5;
+ grid-column-end: 6;
+ grid-row-end: 6;
+}
+
+.item-4 {
+ grid-area: main;   
+ background-image: url("assets/snacks.jpg");
+ grid-column-start: 2;
+ grid-row-start: 7;
+ grid-column-end: 8;
+ grid-row-end: 8;
+}

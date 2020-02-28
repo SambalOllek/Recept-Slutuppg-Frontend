@@ -1,5 +1,10 @@
+$BG: darkslategrey; 
+$contrast: white;
+$future: black;
+
+
 html,body {
-    background-color: darkslategrey;
+    background-color:$BG;
     overflow: hidden;
 }
 #Hero {
@@ -12,8 +17,8 @@ padding: 0 px;
 margin: 0px;
 }
 #Logger {
-background-color: darkslategrey;
-border-style: 10px white;
+background-color: $BG;
+border-style: 10px $contrast;
 width: 50vw;
 height: 25vh;
 opacity: 90%;
@@ -24,23 +29,16 @@ margin-top:400px;
 
 }
 h1 {
-    color:white;
+    color:$contrast;
     text-align:center;
 }
-#LoginDiv {
-    background-color: black;
-    width: 25%;
-    margin-left: 25%;
-}
-#Login {
-    background-color:darkslategrey;
-    color: white;
-    padding: 10px;
-    border-style:white;
-    margin-top: 70px;
-    width: 150px;
-    //margin-left: 100px;
-    
 
-    
+#Login {
+    text-decoration: none;
+    background-color:$BG;
+    color: $contrast;
+    padding: 5px;
+    margin-bottom: 50px;
+    width: 150px;
+    //margin-left: 100px;   
 }

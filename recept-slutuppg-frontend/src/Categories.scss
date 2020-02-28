@@ -1,10 +1,10 @@
 $BG: darkslategrey; 
-$text: white;
-
+$contrast: white;
+$future: black;
 
 html,body {
    font-family: 'Poppins', sans-serif;
-   background-color: darkslategrey;
+   background-color: $BG;
 
 
 }
@@ -43,7 +43,7 @@ display: -webkit-flex;
    position: relative;
    width: 300px;
    height: 400px;
-   background: #000;
+   background: $future;
    box-shadow: 0 30px  30px rgba(0,0,0,.5);
    cursor: pointer;
    
@@ -83,7 +83,7 @@ opacity: 0;
    background: $BG;
    transition: .5s;
    overflow: hidden;
-   color: white;
+   color: $contrast;
    text-align: ce;
 
    padding: 15px;

@@ -1,3 +1,7 @@
+$BG: darkslategrey; 
+$text: white;
+
+
 html,body {
    font-family: 'Poppins', sans-serif;
    background-color: darkslategrey;
@@ -13,7 +17,7 @@ padding: 0 px;
 margin: 0px;
 }
 #Rear {
-background-color: darkslategrey;
+background-color: $BG;
 margin: 0;
 padding: 0;
 opacity:90%;
@@ -23,10 +27,6 @@ align-items: center;
 min-height: 100vh;
 width: 100vw;
 
-}
-h1 {
-   color:white;
-   text-align:center;
 }
 
 .container {
@@ -80,9 +80,11 @@ opacity: 0;
    left: 10%;
    width: 80%;
    height: 60px;
-   background: #fff;
+   background: $BG;
    transition: .5s;
    overflow: hidden;
+   color: white;
+   text-align: center;
 
    padding: 15px;
    box-sizing: border-box;

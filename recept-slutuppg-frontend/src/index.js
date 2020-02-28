@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import FirstPage from './FirstPage.js';
 import NewRec from './NewRec.js';
 import Categories from './Categories.js';
+import Recipes from './Recipes.js';
 
 ReactDOM.render(<Categories/>, document.getElementById('root'));
 

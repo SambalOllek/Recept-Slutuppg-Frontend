@@ -1,5 +1,5 @@
 export async function FetchRecipes() {
-    const result = await fetch(`/slutprojekt-backend/entities/Recept`, {
+    const result = await fetch(`/recipes`, {
         method: "GET"
     });
 
@@ -13,7 +13,7 @@ export async function FetchRecipes() {
 }
 
 export async function FetchCategories() {
-    const result = await fetch(`/slutprojekt-backend/entities/Category`, {
+    const result = await fetch(`/categories`, {
         method: "GET"
     });
 

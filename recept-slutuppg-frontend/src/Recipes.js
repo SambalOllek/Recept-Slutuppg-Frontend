@@ -1,21 +1,35 @@
 import React from 'react';
 import './Recipes.scss';
+import { FetchRecipes } from "./services/Service.js";
+import { Recepten } from "./Info.js";
+
 import kebab from "./assets/kebab.jpg";
 import hamburger from "./assets/hamburger.jpg";
 import hotdog from "./assets/hotdog.jpg";
 import wings from "./assets/wings.jpg";
 
 export default function Recipes() {
+    const [recepts, setRecipe] = React.useState([]);
 
+    async function getRecipes() {
+        const Recipe = await FetchRecipes();
+        setRecipe(Recipe);
+    }
+getRecipes();
     return (
         <div>
             <div id="Hero">
                 <div id="Rear">
                     <header>
                         <h1>Recipes</h1>
-                        <button id="new">Add new recipe</button>
+                        <button id="new" >Add new recipe</button>
+                        
+                        <div>
+                            <Recepten recept = {recepts}></Recepten>
+                            
+                        </div>
                     </header>
-                    <div class="r_container">
+                    {/* <div class="r_container">
                         <div class="card">
                             <div class="r_imgBx" data-text="Kebab">
                             <img src= {kebab}/>
@@ -70,8 +84,8 @@ export default function Recipes() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    </div>
+                    </div> */}
+                    </div> 
 
                  
                 </div>

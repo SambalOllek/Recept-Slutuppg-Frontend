@@ -6,18 +6,20 @@ import cold from "./assets/cold.jpg";
 import hot from "./assets/hot.jpg";
 import dessert from "./assets/dessert.jpg";
 import snacks from "./assets/snacks.jpg";
+import { NavLink } from 'react-router-dom';
 
 
 export default function Categories() {
     const [categories, setCategory] = React.useState(undefined);
 
-    async function Categories() {
+    async function getCategories() {
         const Category = await FetchCategories();
         setCategory(Category);
 
     }
-
-
+//getCategories();
+const Categories = () => {
+    
     return (
         <div>
             <div id="Hero">
@@ -26,6 +28,7 @@ export default function Categories() {
                     
                     <div class="container">
                         <div class="box">
+                            <NavLink to="/Recipes"/>
                             <div class="imgbox">
                                 <img src={cold}/>
                             </div>
@@ -87,5 +90,7 @@ export default function Categories() {
         </div>
 
 
+
     )
+}
 }

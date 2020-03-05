@@ -1,7 +1,10 @@
 import React from 'react';
 import './FirstPage.scss';
+import { FetchRecipes } from './services/Service';
 
 export default function FirstPage() {
+
+    
     return (
         <div>
             <div id="Hero">

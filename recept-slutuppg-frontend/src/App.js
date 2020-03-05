@@ -1,16 +1,34 @@
-import React from 'react';
-import './App.css';
-import './sass/main.scss';
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+ 
+import Recipes from './Recipes';
+import NewRecipes from './NewRec';
+import Categories from './Categories';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello</p>
-        <a></a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  render() {
+//     const PageSwitchToRecipe = () => {
+//       setRenderedComponent(
+//         <Categories switchScene={PageSwitchToRecipe} />
+//       );
+// const [setRenderedComponent] = userState(
+//   <Categories switchScene={PageSwitchToRecipe}
+// )
+//     }
+
+    return (      
+       <BrowserRouter>
+        <div>
+            <Switch>
+             <Route path="/Categories" component={Categories} exact/>
+             <Route path="/Recipes" component={Recipes}/>
+             <Route path="/NewRec" component={NewRecipes}/>
+           </Switch>
+        </div> 
+      </BrowserRouter>
+    );
+  }
 }
-
+ 
 export default App;

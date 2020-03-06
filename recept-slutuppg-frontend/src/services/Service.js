@@ -25,3 +25,13 @@ export async function FetchCategories() {
     }
     throw new Error("Kunde inte hämta data!");
 }
+
+export async function AddRecipe(id) {
+    const result = await fetch(`/recipes?id=`+id, {
+    });
+    if(result.ok) {
+        console.log("Added new recipe")
+    } else {
+        throw new Error("Add failed")
+    }
+}

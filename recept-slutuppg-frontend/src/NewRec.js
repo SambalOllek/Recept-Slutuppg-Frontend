@@ -1,5 +1,6 @@
 import React from 'react';
 import './NewRec.scss';
+import { AddRecipe } from './services/Service';
 
 export default function NewRec(props) {
     function onLinkClick(id) {
@@ -44,6 +45,7 @@ export default function NewRec(props) {
                             <textarea className="Description" rows="5" cols="60" placeholder="Tell us about your dish!" />
                             <br />
                             <input type="submit" id="Poster" value="Upload" />
+                            <AddRecipe></AddRecipe>
 
                         </div>
                     </>

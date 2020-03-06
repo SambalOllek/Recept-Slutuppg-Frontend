@@ -9,4 +9,4 @@ import Categories from './Categories.js';
 import Recipes from './Recipes.js';
 
 
-ReactDOM.render(<Recipes/>, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));

@@ -6,7 +6,7 @@ import cold from "./assets/cold.jpg";
 import hot from "./assets/hot.jpg";
 import dessert from "./assets/dessert.jpg";
 import snacks from "./assets/snacks.jpg";
-import { NavLink } from 'react-router-dom';
+import { Link, BrowserRouter } from 'react-router-dom';
 
 
 export default function Categories() {
@@ -18,54 +18,61 @@ export default function Categories() {
 
     }
 //getCategories();
-const Categories = () => {
+//const Categories = () => {
     
     return (
         <div>
             <div id="Hero">
-                
                 <div id="Rear">
                     
                     <div class="container">
                         <div class="box">
-                            <NavLink to="/Recipes"/>
+                            
                             <div class="imgbox">
                                 <img src={cold}/>
                             </div>
+                            <Link to="/Recipes">
                             <div class="content">
                                 <h3>Cold Food</h3>
                                 <p>lorem ipsum</p>
                             </div>
+                            </Link> 
                         </div>
                    
                     <div class="box">
                             <div class="imgbox">
                                 <img src={hot}/>
                             </div>
+                            <Link to="/Recipes">
                             <div class="content">
                                 <h3>Hot Food</h3>
                                 <p>lorem ipsum</p>
                             </div>
+                            </Link>
                         </div>
                     
                     <div class="box">
                             <div class="imgbox">
                                 <img src={dessert}/>
                             </div>
+                            <Link to="/Recipes">
                             <div class="content">
                                 <h3>Dessert</h3>
                                 <p>lorem ipsum</p>
                             </div>
+                            </Link>
                         </div>
                     
                     <div class="box">
                             <div class="imgbox">
                                 <img src={snacks}/>
                             </div>
+                            <Link to="/Recipes">
                             <div class="content">
                                 <h3>Snacks</h3>
                                 <p>lorem ipsum</p>
                             </div>
+                            </Link>
                         </div>
                         </div>
                         </div>
@@ -93,4 +100,4 @@ const Categories = () => {
 
     )
 }
-}
+//}

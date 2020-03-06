@@ -21,7 +21,7 @@ class App extends Component {
        <BrowserRouter>
         <div>
             <Switch>
-             <Route path="/Categories" component={Categories} exact/>
+             <Route path="/" component={Categories} exact/>
              <Route path="/Recipes" component={Recipes}/>
              <Route path="/NewRec" component={NewRecipes}/>
            </Switch>

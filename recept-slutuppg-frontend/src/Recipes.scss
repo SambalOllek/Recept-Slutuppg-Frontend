@@ -7,11 +7,12 @@ $future: black;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 html,body {
     font-family: 'Poppins', sans-serif;
     background-color: $BG;
-    overflow: hidden;
+    overflow: scroll;
  
  
  }
@@ -73,4 +74,13 @@ margin: 20px;
  .r_container .card .r_imgBx img {
      max-width: 200px;
      transition: 0.5s ease-in-out;
+ }
+
+ #new {
+     background-color: $BG;
+     padding: 10px;
+     color: $contrast;
+     border-color: white;
+     box-shadow: 0 10px  10px rgba(0,0,0,.5);
+     cursor: pointer;
  }

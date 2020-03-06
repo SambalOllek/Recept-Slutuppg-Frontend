@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Recipes from './Recipes';
 import NewRecipes from './NewRec';
 import Categories from './Categories';
+import FirstPage from './FirstPage';
 
 
 class App extends Component {
@@ -21,7 +22,8 @@ class App extends Component {
        <BrowserRouter>
         <div>
             <Switch>
-             <Route path="/" component={Categories} exact/>
+             <Route path="/" component={FirstPage} exact/>
+             <Route path="/Categories" component={Categories}/>
              <Route path="/Recipes" component={Recipes}/>
              <Route path="/NewRec" component={NewRecipes}/>
            </Switch>

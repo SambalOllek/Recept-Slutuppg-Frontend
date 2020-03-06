@@ -16,6 +16,14 @@ background-size: cover;
 padding: 0 px;
 margin: 0px;
 }
+
+#FPDesc {
+    padding: 15px;
+    width:25vw;
+    text-align:center;
+    color: $contrast;
+    margin-right: 20px;
+}
 #Logger {
 background-color: $BG;
 border-style: 10px $contrast;
@@ -31,6 +39,7 @@ margin-top:400px;
 h1 {
     color:$contrast;
     text-align:center;
+    padding-top: 10px;
 }
 
 #Login {
@@ -40,5 +49,7 @@ h1 {
     padding: 5px;
     margin-bottom: 50px;
     width: 150px;
-    //margin-left: 100px;   
+    border-color: white;
+    //margin-left: 100px;  
+    font-size: larger; 
 }

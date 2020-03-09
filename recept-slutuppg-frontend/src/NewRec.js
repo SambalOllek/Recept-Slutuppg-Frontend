@@ -45,8 +45,7 @@ export default function NewRec(props) {
                             <textarea className="Description" rows="5" cols="60" placeholder="Tell us about your dish!" />
                             <br />
                             <input type="submit" id="Poster" value="Upload" />
-                            <AddRecipe></AddRecipe>
-
+                            
                         </div>
                     </>
                 </div>

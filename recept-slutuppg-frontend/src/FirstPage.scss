@@ -3,6 +3,7 @@ $contrast: white;
 $future: black;
 
 
+
 html,body {
     background-color:$BG;
     overflow: hidden;
@@ -23,6 +24,7 @@ margin: 0px;
     text-align:center;
     color: $contrast;
     margin-left: 12vw;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #Logger {
 background-color: $BG;
@@ -41,6 +43,7 @@ h1 {
     color:$contrast;
     text-align:center;
     padding-top: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #Login {
@@ -50,7 +53,8 @@ h1 {
     padding: 5px;
     margin-bottom: 50px;
     width: 150px;
-    border-color: white;
+    border-color:$contrast;
     //margin-left: 100px;  
     font-size: larger; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }

@@ -54,13 +54,6 @@ export default function NewRec(props) {
                             <h3>Title</h3>
                             <input onChange={TitleChanged} value={title} className="Inputfield" type="text" placeholder="Title of recipe" />
 
-                            <h3>Category</h3>
-                            <select id="food">
-                                <option value="hotfood">Hot Food</option>
-                                <option value="coldfood">Cold Food</option>
-                                <option value="dessert">Dessert</option>
-                                <option value="snacks">Snacks</option>
-                            </select>
                             <h3>
                                 Ingredients
                             </h3>

@@ -79,6 +79,11 @@ margin: 20px;
      padding: 10px;
      color: $contrast;
      border-color: white;
-     box-shadow: 0 10px  10px rgba(0,0,0,.5);
+     
      cursor: pointer;
+     margin-bottom: 10vh;
+ }
+
+ #new:hover {
+    box-shadow: 0 10px  10px rgba(0,0,0,.3);
  }

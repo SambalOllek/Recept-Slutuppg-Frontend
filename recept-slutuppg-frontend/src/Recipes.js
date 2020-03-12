@@ -34,7 +34,7 @@ export default function Recipes() {
                     <header>
                         <h1>Recipes</h1>
                         <Link to="/NewRec">
-                        <button id="new" >Add new recipe</button>
+                        <button id="new" >NEW RECIPE</button>
                         </Link>
                         <div>
                             

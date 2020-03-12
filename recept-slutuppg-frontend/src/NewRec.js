@@ -7,12 +7,42 @@ export default function NewRec(props) {
         props.onNavigate(id);
     }
 
-    const [nut, setNut] = React.useState([
-        <input type="text" className="IInput"
-            placeholder="Enter an ingredient" />
+    
+
+    function postres() {
+        console.log(title, description, instructions)
+        const compile = {
+            "description": description,
+            "id":0,
+            "name": title,
+            "tutorial": instructions
+            }
+            AddRecipe(compile);
+    }
+
+
+    const [IngredList, setIngredList] = React.useState([
+        ""
     ]);
 
+    const [title, settitle] = React.useState("")
 
+    const [instructions, setinstructions] = React.useState("")
+
+    const [description, setdescription] = React.useState("")
+
+
+    function TitleChanged(ev) {
+        settitle(ev.currentTarget.value)
+    }
+
+    function InstructionsChanged(ev) {
+        setinstructions(ev.currentTarget.value)
+    }
+
+    function DescriptionChanged(ev) {
+        setdescription(ev.currentTarget.value)
+    }
     return (
         <div>
             <div id="Hero">
@@ -22,13 +52,24 @@ export default function NewRec(props) {
                         <div className="Rform">
 
                             <h3>Title</h3>
-                            <input className="Inputfield" type="text" placeholder="Title of recipe" />
-                            
+                            <input onChange={TitleChanged} value={title} className="Inputfield" type="text" placeholder="Title of recipe" />
+
+                            <h3>Category</h3>
+                            <select id="food">
+                                <option value="hotfood">Hot Food</option>
+                                <option value="coldfood">Cold Food</option>
+                                <option value="dessert">Dessert</option>
+                                <option value="snacks">Snacks</option>
+                            </select>
                             <h3>
                                 Ingredients
                             </h3>
                             <div className="IngredientsInputWrap">
-                                {nut}
+                                {IngredList.map((value) => {
+                                    return(<input type="text" className="IInput"
+                                    placeholder="Enter an ingredient" />
+                            )
+                                    })}
                             </div>
                             <br />
                             <button id="add" onClick={AddI}>+</button>
@@ -37,15 +78,15 @@ export default function NewRec(props) {
                                 Instructions:
                             </h3>
 
-                            <textarea className="Instructions" rows="5" cols="60" placeholder="How is your dish made?" />
+                            <textarea onChange={InstructionsChanged} value={instructions} className="Instructions" rows="5" cols="60" placeholder="How is your dish made?" />
                             <br />
                             <h3>
                                 Description
                             </h3>
-                            <textarea className="Description" rows="5" cols="60" placeholder="Tell us about your dish!" />
+                            <textarea onChange={DescriptionChanged} value={description} className="Description" rows="5" cols="60" placeholder="Tell us about your dish!" />
                             <br />
-                            <input type="submit" id="Poster" value="Upload" />
-                            
+                            <input type="submit" id="Poster" value="Upload" onClick={postres}></input>
+
                         </div>
                     </>
                 </div>
@@ -59,9 +100,8 @@ export default function NewRec(props) {
 
     )
     function AddI() {
-        let newArray = [...nut];
-        newArray.push(<><br /><input type="text" className="IInput"
-            placeholder="Enter an ingredient" /></>);
-        setNut(newArray);
+        let newArray = [...IngredList];
+        newArray.push("");
+        setIngredList(newArray);
     }
 }

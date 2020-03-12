@@ -1,8 +1,9 @@
 import React from 'react';
 import './Recipes.scss';
-import { FetchRecipes } from "./services/Service.js";
-import { Recepten } from "./Info.js";
+import { FetchRecipes, FetchIngredients } from "./services/Service.js";
+import { Recepten, Ingreds } from "./Info.js";
 import { Link } from 'react-router-dom';
+
 
 import kebab from "./assets/kebab.jpg";
 import hamburger from "./assets/hamburger.jpg";
@@ -11,15 +12,24 @@ import wings from "./assets/wings.jpg";
 
 export default function Recipes() {
     const [recepts, setRecipe] = React.useState([]);
+    React.useEffect(() => {
+        getIngredients();
+        getRecipes();
+    }, []);
+    const [ingredient, setingredient] = React.useState([])
 
     async function getRecipes() {
         const Recipe = await FetchRecipes();
         setRecipe(Recipe);
     }
-getRecipes();
+    async function getIngredients() {
+        const Ingredient = await FetchIngredients();
+        setingredient(Ingredient);
+    }
+
     return (
         <div>
-            <div id="Hero">
+            <div id="Heros">
                 <div id="Rear">
                     <header>
                         <h1>Recipes</h1>
@@ -27,7 +37,9 @@ getRecipes();
                         <button id="new" >Add new recipe</button>
                         </Link>
                         <div>
-                            <Recepten recept = {recepts}></Recepten>
+                            
+                        <Ingreds ingredients = {ingredient}></Ingreds> <Recepten recept = {recepts}></Recepten>
+                            
                             
                         </div>
                     </header>
@@ -35,10 +47,6 @@ getRecipes();
 
                  
                 </div>
-            <body>
-
-            </body>
-
         </div>
 
 

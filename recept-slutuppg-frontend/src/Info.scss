@@ -26,6 +26,12 @@ overflow: scroll;
     color:black;
 }
 
+#Tut {
+    color:black;
+    width: 50vw;
+    margin-left: 12vw;
+}
+
 #recipeimg {
    width: 50vw;
    margin-left: 12vw;
@@ -34,4 +40,23 @@ overflow: scroll;
 
 #Ingredients {
     color:black;
+}
+
+#ingBox {
+    
+    background-color: $contrast;
+    margin-left: 4px;
+    width: 10vw;
+    display:inline-block;
+    border-radius: 5px;
+    
+}
+
+#ingBox:hover {
+    box-shadow: 0 30px  30px rgba(0,0,0,.3);
+}
+
+.text {
+    color: $future;
+    text-align:center;
 }

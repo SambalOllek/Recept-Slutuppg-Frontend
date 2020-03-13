@@ -1,5 +1,5 @@
 export async function FetchRecipes() {
-    const result = await fetch(`/recipes`, {
+    const result = await fetch(`recipes`, {
         method: "GET"
     });
 
@@ -13,7 +13,7 @@ export async function FetchRecipes() {
 }
 
 export async function FetchCategories() {
-    const result = await fetch(`/categories`, {
+    const result = await fetch(`categories`, {
         method: "GET"
     });
 
@@ -27,7 +27,7 @@ export async function FetchCategories() {
 }
 
 export async function FetchIngredients() {
-    const result = await fetch(`/ingredients` , {
+    const result = await fetch(`ingredients` , {
         method: "GET"
     });
 
@@ -42,7 +42,7 @@ export async function FetchIngredients() {
 
 
 export async function AddRecipe(data) {
-    const result = await fetch(`/recipes`, {
+    const result = await fetch(`recipes`, {
         method: "POST",
         headers: {
         "content-type": "application/json"
